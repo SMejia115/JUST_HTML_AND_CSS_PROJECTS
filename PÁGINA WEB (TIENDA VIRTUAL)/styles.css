@@ -1,0 +1,139 @@
+body {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+
+.Header{
+    height:  8vh;
+    width: 90vw;
+}
+
+.Header nav{
+    display: flex;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    text-align: center;
+    justify-content:space-around;
+    width: 100%;
+    height: 10%;
+    padding: 30px 0;
+    position: fixed;
+    left:0;
+    top: 0;
+}
+
+.Header  a{
+    color:white;
+    text-decoration: none;
+    font-size: 40px;
+    padding: 5px 25px;
+}
+
+.Header a:hover{
+    /*background-color: aqua;*/
+    color:blue;
+}
+
+
+.header span{
+    font-size: 80px;
+}
+
+.ContenedorProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+main{
+    margin-top: 13vw;
+    padding: 15px;
+    margin-bottom: 10vw;
+}
+
+.ContenedorProductos .Producto{
+    border: 3px solid #000000f7;
+}
+
+.ContenedorProductos .Producto .Imagen img{
+    border-radius: 15px;
+    width: 100%;
+}
+
+.ContenedorProductos .Producto .Imagen{
+    border-radius: 15px;
+    max-width: 500px;
+    min-width: 220px;
+}
+
+.ContenedorProductos .Producto{
+    padding: 10px;
+    min-width: 240px;
+    max-width: 300px;
+    border-radius: 15px;
+    background-color: rgba(182, 182, 182, 0.678);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 0;
+    flex-direction: column;
+    bottom: 0;
+
+}
+
+.Producto button{
+    background-color: black;
+    border-radius: 3px;
+    border-style: double;
+    border: none;
+    padding: 15px 3px;
+}
+
+.Producto button:hover{
+    background-color: rgba(0, 0, 0, 0.463);
+}
+
+.Producto a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 580px){
+    .Header a{
+        position: relative;
+        padding-top: auto;
+        font-size: 17px;
+    
+    }
+
+    .Header nav{
+        display: column;
+        padding: 8px 0;
+    }
+}
+
+
+

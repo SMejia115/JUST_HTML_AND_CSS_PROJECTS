@@ -1,0 +1,81 @@
+.InfoProducto{
+    margin: 8% auto 4% auto;
+    display:flex;
+
+    border: 3px solid #111;
+    align-items:center;
+    justify-content: space-between;
+    max-width: 50vw;
+    min-width: 20vw;
+    overflow:visible;
+    gap: 0;
+}
+
+
+.InfoProducto .ImgProducto{
+    justify-content: left;
+    width: 100%;
+    padding: 0 0;
+}
+
+.InfoProducto .ImgProducto img{
+    width: 100%;
+}
+
+.InfoProducto .DescProducto{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: left;
+    padding-left: 10px;
+    height: 100%;
+    width: 90%;
+    gap: 0.55vw;
+}
+
+.InfoProducto .DescProducto p{
+    text-align: justify;
+    width: 90%;
+    padding: auto;
+}
+
+.InfoProducto .DescProducto h1{
+    max-width: 40vw;
+    padding: 5px 20px 15px 5px;
+}
+
+footer{
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.InfoProducto .DescProducto input{
+    text-decoration: underline;
+    width: 25px;
+}
+
+.InfoProducto .DescProducto .btn{
+    align-items: center;
+    width: 120px;
+    text-decoration:none;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.InfoProducto .DescProducto .btn:hover{
+    color: white;
+    background-color: blue;
+    border: 2px solid black;
+}
+
+
+
+@media screen and (max-width:830px){
+    .InfoProducto{
+        margin-top: 13vw;
+        flex-direction: column;
+        max-width: 85vw;
+    }
+}

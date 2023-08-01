@@ -1,0 +1,109 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:rgba(255, 253, 253, 0.856);
+}
+
+.FormContainer {
+    margin: 13% 0 7% ;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    min-width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 50%;
+    min-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-style: double;
+    border-width: 10px;
+}
+
+.FormContainer .LoginContainer{
+    margin: auto;
+}
+
+.FormContainer .LoginContainer > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.FormContainer .LoginContainer > p,
+.FormContainer .LoginContainer > span {
+    text-align: center;
+    color: #f8ecec
+}
+
+.FormContainer .LoginContainer label{
+    display: block;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.FormContainer .LoginContainer input.Input{
+    display: block;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+.FormContainer .LoginContainer input.Input:focus{
+    outline: solid 3px #555
+}
+
+
+.FormContainer  a{
+    color: blue;
+    text-decoration: none;
+}
+
+.FormContainer  a:hover{
+    text-decoration:underline
+}
+
+.Btn{
+    border: none;
+    padding: 10px 5px;
+    min-width: 100%;
+    font-weight: bolder;
+    display: block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.Btn:hover{
+    background-color: blue;
+    color: white;
+}
+
+.Btn .BtnLogin{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:654px) {
+    .FormContainer{
+        width: 95%;
+    }
+    .FormContainer .LoginContainer{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:535px) {
+    .FormContainer{
+        width: 98%;
+    }
+}
